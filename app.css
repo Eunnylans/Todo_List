@@ -1,0 +1,137 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background-image: linear-gradient(
+    to right top,
+    #6d327c,
+    #485da6,
+    #00a1ba,
+    #00bf98,
+    #36c486
+  );
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-size: 25px;
+  color: white;
+  font-family: system-ui;
+  letter-spacing: 1.25px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  font-size: 20px;
+}
+
+div.appContainer {
+  margin: 50px auto;
+  max-width: 500px;
+}
+
+h1#appTitle {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+div#appHeader {
+  text-align: center;
+}
+
+div#appHeader div#inputContainer {
+  margin-bottom: 20px;
+  position: relative;
+  padding-top: 15px;
+}
+
+div#appHeader div#inputContainer input#todoInput {
+  border: 0;
+  border-bottom: 2px solid white;
+  outline: 0;
+  font-size: 50px;
+  color: white;
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+  letter-spacing: 1.25px;
+}
+
+div#appHeader div#inputContainer input#todoInput::placeholder {
+  color: transparent;
+}
+
+div#appHeader div#inputContainer label {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  display: block;
+  transition: 0.2s;
+  font-size: 16px;
+  color: white;
+  font-weight: 600;
+}
+
+div#appHeader div#inputContainer input#todoInput:placeholder-shown ~ label {
+  top: 45px;
+  color: white;
+  font-size: 30px;
+  font-weight: 100;
+}
+
+div#appHeader div#inputContainer input#todoInput:focus ~ label {
+  top: 0;
+  font-size: 16px;
+  color: #845ec2;
+  font-weight: 600;
+}
+
+div#appHeader button#todoAddBtn {
+  background-color: #845ec2;
+  color: rgb(221, 221, 221);
+  font-size: 25px;
+  box-sizing: border-box;
+  border-radius: 50px;
+  box-shadow: 2px;
+  border-color: #845ec2;
+  width: 150px;
+}
+
+div ul li {
+  max-width: auto;
+  list-style-type: none;
+  color: white;
+  margin: 0;
+  padding: 8px 20px;
+  font-size: 25px;
+  background-image: linear-gradient(to right top, #00bf98, #36c486);
+  align-items: center;
+  height: 50px;
+  flex: 5;
+  display: flex;
+}
+
+span {
+  color: rgb(227, 15, 15);
+}
+
+input.checkbox {
+  margin-left: 0;
+  margin-right: 0;
+  display: inline;
+}
+
+p {
+  margin-top: 20px;
+  margin-right: 320px;
+  position: center;
+  align-items: center;
+}
+
+p:hover {
+  background-color: white;
+  color: black;
+}

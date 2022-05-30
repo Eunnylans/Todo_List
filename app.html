@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo-App</title>
+    <link rel="stylesheet" href="app.css" />
+  </head>
+  <body>
+    <div class="appContainer">
+      <h1 id="appTitle">Todo's</h1>
+
+      <div id="appHeader">
+        <div id="inputContainer">
+          <input
+            autocomplete="off"
+            type="text"
+            placeholder="Title"
+            id="todoInput"
+          />
+          <label for="name" class="formLabel">Title</label>
+        </div>
+        <button id="todoAddBtn">Add</button>
+      </div>
+      <div>
+        <ul id="todosList">
+          <li>
+            <input class="checkbox" type="checkbox" />
+            <p class="paragraph">Test</p>
+            <span class="remove">&cross;</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
