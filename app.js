@@ -20,7 +20,7 @@ function createTodo() {
 
   let remove = document.createElement('span');
   remove.classList.add('remove');
-  remove.innerHTML = '&cross';
+  remove.innerHTML = '&#10007;';
 
   li.appendChild(checkbox);
   li.appendChild(paragraph);
