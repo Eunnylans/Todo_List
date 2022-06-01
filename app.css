@@ -101,10 +101,10 @@ div#appHeader button#todoAddBtn {
 }
 
 div ul li {
-  max-width: auto;
+  max-width: 1200px;
   list-style-type: none;
   color: white;
-  margin: 0;
+  margin-left: -45px;
   padding: 8px 20px;
   font-size: 25px;
   background-image: linear-gradient(to right top, #00bf98, #36c486);
@@ -114,24 +114,22 @@ div ul li {
   display: flex;
 }
 
+div ul li:hover {
+  background-image: linear-gradient(to right top, #edf4f2, #36c486);
+}
+
 span {
   color: rgb(227, 15, 15);
 }
 
 input.checkbox {
-  margin-left: 0;
-  margin-right: 0;
-  display: inline;
+  margin-right: 120px;
+  display: inline-block;
 }
 
 p {
   margin-top: 20px;
-  margin-right: 320px;
+  margin-right: 200px;
   position: center;
   align-items: center;
-}
-
-p:hover {
-  background-color: white;
-  color: black;
 }
