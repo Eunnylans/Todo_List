@@ -125,6 +125,7 @@ span {
 input.checkbox {
   margin-right: 120px;
   display: inline-block;
+  position: relative;
 }
 
 p {
